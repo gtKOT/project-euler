@@ -9,13 +9,13 @@ for x in nums:
     for y in nums:
         for z in nums:
             # xz / zy
-            numerator   = int(x + z)
-            denominator = int(z + y)
-            if numerator < denominator:
-                if int(x)*denominator == int(y)*numerator:
-                    suitable.append( (numerator, denominator) )
+            xz = int(x + z)
+            zy = int(z + y)
+            if xz < zy:
+                if int(x)*zy == int(y)*xz:
+                    suitable.append( (xz, zy) )
 
-            # zx / yz patterns is covered by the former patterns
+            # zx / zy patterns is covered by the former patterns
 
 print suitable;
 
