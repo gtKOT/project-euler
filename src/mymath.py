@@ -155,7 +155,7 @@ def digitOf(num):
 
 
 def gcd(a, b):
-    """by Euclid algorithm"""
+    """by Euclidean algorithm"""
     if b == 0:
         return a
     else:
