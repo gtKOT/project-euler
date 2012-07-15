@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 #coding:UTF-8
 
-from mymath import getPrimes
 from mymath import isPowerOf
 from math import sqrt
 

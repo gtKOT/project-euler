@@ -121,10 +121,10 @@ def comb(n, r):
 
 
 def permutation(n, r):
-    ret = 1
+    rhs = 1
     for i in range(r, n+1):
-        ret *= i
-    return ret
+        rhs *= i
+    return rhs
 
 
 
@@ -141,14 +141,14 @@ def isPowerOf(base, targetNum):
 
 
 
-def getDigitNum(target):
+def digitOf(num):
     """targetの(10進数での)桁数を返す."""
-    if target == 0:
+    if num == 0:
         return 0
 
-    digitNum = 0
-    while(target != 0):
-        target /= 10
-        digitNum += 1
-    return digitNum
+    digit = 0
+    while num != 0:
+        num /= 10
+        digit += 1
+    return digit
 
