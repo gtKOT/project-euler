@@ -15,12 +15,7 @@ for x in nums:
                 if int(x)*denominator == int(y)*numerator:
                     suitable.append( (numerator, denominator) )
 
-            # zx / yz
-            numerator   = int(z + x)
-            denominator = int(y + z)
-            if numerator < denominator:
-                if int(x)*denominator == int(y)*numerator:
-                    suitable.append( (numerator, denominator) )
+            # zx / yz patterns is covered by the former patterns
 
 print suitable;
 
