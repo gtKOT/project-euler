@@ -152,3 +152,11 @@ def digitOf(num):
         digit += 1
     return digit
 
+
+
+def gcd(a, b):
+    """by Euclid algorithm"""
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a%b)
