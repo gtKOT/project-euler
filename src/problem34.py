@@ -8,10 +8,7 @@ accept = []
 facts = map(factorial, range(0, 10))
 
 for num in range(0, 1000000):
-    factSum = 0
-    for dig in str(num):
-        factSum += facts[int(dig)]
-    if num == factSum:
+    if num == sum([facts[int(dig)] for dig in str(num)]):
         accept.append(num)
 
 print accept
